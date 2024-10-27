@@ -23,6 +23,6 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
-<nav> <a href="/photoapp">Photo App</a> <a href="/"> hem </a></nav>
+<nav> <a href="my-webbsite/photoapp">Photo App</a> <a href="/"> hem </a></nav>
 <slot />
 
