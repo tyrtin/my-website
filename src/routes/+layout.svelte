@@ -22,8 +22,10 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	import { base } from '$app/paths';
 </script>
-<nav> <a href="/photoapp">Photo App</a> <a href="/">hem</a></nav>
+<nav> <a href="{base}/photoapp">Photo App</a> <a href="{base}/">hem</a></nav>
 <slot />
 
 <style>
