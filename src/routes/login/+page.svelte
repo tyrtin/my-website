@@ -9,57 +9,46 @@ onMount(() => {
         users = JSON.parse($users_store);
     }
 });
-
-
-
-
     let color = "black"
     let namn 
-    let e 
     let password
-    let colors = [{namn: "Blå", value: "blue"}, {namn: "Röd", value: "red"}, {namn: "Lila", value: "purple"}, {namn: "Rosa", value: "pink"}, {namn: "Gul", value: "yellow"}]
+    let colors = [{namn: "Blå", value: "blue"}, {namn: "Röd", value: "red"}, {namn: "Lila", value: "purple"}, {namn: "Rosa", value: "pink"}]
     function handleSubmit(){
-        let new_user = {namn: namn, password: password, e: e, colors: color};
-        if (users.filter((user) => user.namn ==  namn).length >0){
-                    alert("namn finns redan")
-
+        let new_user = {namn: namn, password: password};
+        if (users.filter((user) => user.namn ==  namn && user.password==password).length >0){
+                    alert("Välkommen")
         }
         else{
             users = [...users, new_user];
             $users_store = JSON.stringify(users); 
-            alert("skapad")
+            alert("Skapa användare/ kontrollera lösenord/användarnamn")
         }
     }
+
 </script>
 
 <main>
+
+    
+
+
 <div class="container">
-<h1>Register</h1>
+<h1>Inloggning</h1>
+<br>
 <form on:submit|preventDefault={handleSubmit}>
     <div style="width: 100px; height: 100px; border-radius: 50%; overflow:hidden; background-color:{color};">   
     </div>
+    <br>
     <label for="name"><b>Användarnamn:</b></label>
     <input type="text" id="name" bind:value={namn}>
-    <label for= "email"><b>E-postadress:</b></label>
-    <input type="email" id="e-postadress" bind:value={e}>
     <label for= "password"><b>Lösenord:</b></label>
     <input type="password" id="lösenord" bind:value={password}>
-    <label for="favoritefärg"><b>Färg:</b></label>
-<select bind:value={color} name ="favoritefärg" id = "färg">
-    <option value="white">Vit</option>
-    {#each colors as c}
-        <option value={c.value}>{c.namn}</option>
-      
-    {/each}
-</select>
-<br><br>
-<b><input type="submit" value= "Registera" class="button"></b>
 <br>
+<br>
+<input type="Submit" value= "Logga in" class="button">
 </form>
 <br>
-<a href="/login">Har du redan ett konto? Logga in</a> 
-
-
+<a href="/register">Har du inget konto? Registrera</a>
 
 </main>
 
@@ -72,12 +61,11 @@ onMount(() => {
     align-items: center;
     border: solid 5px rgb(241, 192, 232);
     border-radius: 10px;
-    width: 25%;
-    height: 70%;
+    width: 20%;
+    height: 60%;
     background-color: #fddfff;
     margin: auto;
     color:black;
-    min-height: 500px;
     min-width: 300px
 }     
 
@@ -86,7 +74,6 @@ onMount(() => {
         border-right: outset 2px rgb(162, 135, 157);
         border-radius: 6px;
         background-color: rgb(228, 155, 237);
-        
     }
     
  main{
@@ -97,3 +84,4 @@ onMount(() => {
         padding: 5%;
     }
 </style>
+
