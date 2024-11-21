@@ -25,7 +25,9 @@
 
 	import { base } from '$app/paths';
 </script>
-<nav> <a href="{base}/photoapp">Photo App</a> <a href="{base}/">hem</a><a href="{base}/register">Register</a></nav>
+<nav> <a href="{base}/photoapp">Photo App</a> 
+	<a href="{base}/">hem</a>
+	<a href="{base}/register">Register</a></nav>
 
 <slot />
 

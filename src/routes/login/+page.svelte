@@ -1,5 +1,7 @@
 <script>
     import {users_store} from "$lib/user";
+
+    import { base } from '$app/paths';
 let users = [];
 
 import { onMount } from 'svelte';
@@ -48,7 +50,7 @@ onMount(() => {
 <input type="Submit" value= "Logga in" class="button">
 </form>
 <br>
-<a href="/register">Har du inget konto? Registrera</a>
+<a href="{base}/register">Har du inget konto? Registrera</a>
 
 </main>
 
