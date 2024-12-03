@@ -25,9 +25,12 @@
 
 	import { base } from '$app/paths';
 </script>
-<nav> <a href="{base}/photoapp">Photo App</a> 
+<nav> <a href="{base}/photoapp">Photoapp</a> 
 	<a href="{base}/">hem</a>
-	<a href="{base}/register">Register</a></nav>
+	<a href="{base}/register">Register</a>
+	<a href="{base}/shoppinglist">Shoppinglist</a>
+	<a href="{base}/memory">Memory</a>
+</nav>
 
 <slot />
 
