@@ -53,7 +53,7 @@
             <ul>
                 {#each varor as vara,i}
                 {#if vara.bought == true}
-                    <li>
+                    <li class= "linje">
                         <form on:submit|preventDefault={item_not_bought(vara)}>
                             {vara.namn} <input type = "submit" value= "Köpas" class="knapp"> 
                             <button type="button" on:click={()=>item_ta_bort(i)} class="click">Ta bort</button>
@@ -77,8 +77,13 @@
 
 
 <style>
+
+.linje{
+    border-bottom: solid 1px white;
+}
+
 .varaitem{
-    border-bottom: 1px white;
+    border-bottom: solid 1px white;
 }
     
 .click{

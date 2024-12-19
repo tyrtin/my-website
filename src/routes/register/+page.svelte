@@ -17,7 +17,7 @@ onMount(() => {
     let namn 
     let e 
     let password
-    let colors = [{namn: "Blå", value: "blue"}, {namn: "Röd", value: "red"}, {namn: "Lila", value: "purple"}, {namn: "Rosa", value: "pink"}, {namn: "Gul", value: "yellow"}]
+    let colors = [{namn: "Blå", value: "skyblue"}, {namn: "Röd", value: "orangered"}, {namn: "Lila", value: "mediumpurple"}, {namn: "Rosa", value: "Fuchsia"}, {namn: "Gul", value: "yellow"}]
     function handleSubmit(){
         let new_user = {namn: namn, password: password, e: e, colors: color};
         if (users.filter((user) => user.namn ==  namn).length >0){
