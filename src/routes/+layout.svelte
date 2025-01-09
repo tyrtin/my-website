@@ -30,6 +30,7 @@
 	<a href="{base}/register">Register</a>
 	<a href="{base}/shoppinglist">Shoppinglist</a>
 	<a href="{base}/memory">Memory</a>
+	<a href="{base}/chat">chat</a>
 </nav>
 
 <slot />

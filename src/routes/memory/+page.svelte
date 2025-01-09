@@ -52,8 +52,7 @@
 
 
 
-
-
+            
         
         cards = cards
     }
@@ -148,16 +147,15 @@
         width: 20vw;
         height: 20vh;
         display: grid;
-        
-        
+        transform: hover scale(0.5px);
     }
 
     .boxes{
         grid-gap: 10px;
         border-radius: 20px;
         display: grid;
-        grid-template-columns:repeat(4, 100px);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-columns:repeat(4, 150px);
+        grid-template-rows: repeat(3, 150px);
     }
 
 
