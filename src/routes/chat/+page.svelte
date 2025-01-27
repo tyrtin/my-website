@@ -1,13 +1,27 @@
 <script>
     import { enhance } from "$app/forms";
     import ElizaBot from 'elizabot';
+	import { onMount } from "svelte";
     const eliza = new ElizaBot();
     let chat = [{ user: 'Eliza', message: eliza.getInitial() }];
+
+
+    onMount(()=>{
+
+        let chat_s = localStorage.getItem("myChat");
+        if (chat_s.length>2){
+            chat = JSON.parse(chat_s)
+        }
+
+
+    })
+
+
    
  async function write(msg) {
     let new_message = {user: 'me', message: msg};
-        chat.push(new_message)
-        chat=chat
+    chat.push(new_message)
+    chat=chat
 
     var element = document.getElementById("visible");
     element.style.display = "flex"; // Visa elementet
@@ -18,7 +32,7 @@
         chat.push(new_message_Eliza)
         chat=chat
 
-        localStorage.setItem("myChat", chat);
+        localStorage.setItem("myChat", JSON.stringify(chat));
   }
                 
 </script>
