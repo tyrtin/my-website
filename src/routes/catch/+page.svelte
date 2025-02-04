@@ -1,10 +1,28 @@
+<script>
+    let fallingLetters = "QWERTYUIOPASDFGHJKLZXCVBNM@1234567890"
+    let letters = []
+    import { base } from '$app/paths';
+
+
+    function pop (){
+        
+    }
+</script>
+
+
 <main>
     <div class="container">
         <input type="text" placeholder="email@">
-    </div>
+        <a class = "button" href="{base}/catch/robot">Verify</a>
+    </div> 
 </main>
 
+
+
 <style>
+    .button{
+        background-color: white;
+    }
     .container{
         display: flex;
         width: 250px;
@@ -22,3 +40,5 @@
         background-color: black;
     }
 </style>
+
+

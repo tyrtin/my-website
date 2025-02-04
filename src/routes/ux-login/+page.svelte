@@ -1,61 +1,61 @@
 <script>
-    let stringletters = "sfgrfdbf"
-    let letters = []
+    let stringLetters = "QWERTYUIOP"
+  
     let username = ""
-
-    for (let letter of stringletters){
+    let letters = []
+    randomizeLetters()
+    function randomizeLetters(){
+      letters = []
+  
+      for (let letter of stringLetters){
         let top = Math.random()*80
         let left = Math.random()*80
         letters.push({letter:letter,top:top,left:left})
+      }
+      letters = letters
     }
-
-    function addletter(index){
-        let letter = letter[index]
-        username += letter.letter
-        letter.top = Math.random()*90
-        letter.left = Math.random()*90
-
-        letters = letters
-
+  
+    function addLetter(index){
+      let letter = letters[index]
+      username += letter.letter
+      letter.top = Math.random()*90
+      letter.left = Math.random()*90
+  
+      letters = letters
+  
     }
-
-    setInterval(()=>{
-        let letters = []
-
-    for (let letter of stringletters){
-        let top = Math.random()*80
-        let left = Math.random()*80
-        letters.push({letter:letter,top:top,left:left})
-    }
-    }, 2000);
-
-</script>
-
-<section>
-
-{#each letters as {letter,top,left},i}
-    <button on:click={()=>addletter(i)} style="top:{top}vh;left{left}vw;">{letter}</button> 
-{/each}
-</section>
-
-<p>Username: {username}</p>
-
-
-<style>
-
+  
+    setInterval(randomizeLetters, 2000);
+  
+  </script>
+  
+  <section>
+  
+  {#each letters as {letter,top,left},i }
+    <button on:click={()=>addLetter(i)} style="top:{top}%; left:{left}%;">{letter}</button>
+  {/each}
+  </section>
+  <p>username:  {username}</p>
+  
+  
+  <style>
+  
     section{
-        position: relative;
-        background-color: pink;
-        width: 80vw;
-        height: 80vh;
-        margin: auto;
+      position: relative;
+      background-color: beige;
+      width: 80vw;
+      height: 80vh;
+      margin: auto;
     }
-
+  
     button{
-        position: absolute;
-        background-color: aqua;
-        padding: 10px;
+      position: absolute;
+      background-color:aqua;
+      padding: 1em;
     }
-
-    
-</style>
+  
+    button:active{
+      transform: scale(1.4);
+      transition: all 40ms;
+    }
+  </style>

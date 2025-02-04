@@ -14,8 +14,12 @@
     let images = [bild, bild2, bild3, bild4, bild5, bild6]
     let cards = []
     for (let i = 0; i < 12; i++){
-        cards.push({flipped:false,matched:false,image:images[i%6]})
+        cards.push({flipped:false,matched:false,image:images[Math.floor(Math.random() * images.length)]})
     }
+
+
+
+
     function cardflipped(card){
     
         if (flipcount < 2 && !card.flipped){
