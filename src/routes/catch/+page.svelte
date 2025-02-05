@@ -13,7 +13,7 @@
 <main>
     <div class="container">
         <input type="text" placeholder="email@">
-        <a class = "button" href="{base}/catch/robot">Verify</a>
+        <a class = "button" href="{base}/robot">Verify</a>
     </div> 
 </main>
 

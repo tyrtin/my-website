@@ -32,7 +32,7 @@
 	<a href="{base}/memory">Memory</a>
 	<a href="{base}/chat">chat</a>
 	<a href="{base}/search">search</a>
-	<a href="{base}/catch/robot">Useless</a>
+	<a href="{base}/robot">Useless</a>
 </nav>
 
 <slot />

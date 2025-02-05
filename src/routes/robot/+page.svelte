@@ -64,7 +64,6 @@
             {/each}
         </div>
 </main>
-    <a href="{base}/catch"></a> 
 
 <style>
 
