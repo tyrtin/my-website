@@ -34,6 +34,7 @@
 	<a href="{base}/search">search</a>
 	<a href="{base}/robot">robot</a>
 	<a href="{base}/keyboard">keyboard</a>
+	<a href="{base}/hamburgare">hamburgare</a>
 </nav>
 
 <slot />
