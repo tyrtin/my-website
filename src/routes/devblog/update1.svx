@@ -1,0 +1,13 @@
+---
+title: "Blogpost 1"
+date: "2025-04-09"
+---
+
+Today I tried to use a new way to show my pictures in an SVG. Instead of using CSS it used HTMl code. 
+<br> I have yet to change though since I don't know if it will work.
+<br> I haven't done so many changes today only tried new things and see how it works, though In the end I delteted it. 
+<br> i also went to the nurse so I missed the last 45 minutes of the lesson which I could have used to try out the new SVG stuff.   
+<br> Since I started earlier with my projct and this is the first post I can summerize what I have done so far. 
+
+I used stackoverflow to make an information "button". <br> So when I hover over the information text it shows more information under. 
+<br> I have also used my old projects to get help with, for example, how to dispaly pictures in grids. 

@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width" />
 		
 		<link href="./_app/immutable/assets/0.anl6XCEv.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/10.C1p8sMTf.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/entry/start.MWvXkQmU.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/entry.2YkzWSYj.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Cbj4gE2O.js">
@@ -18,11 +17,11 @@
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.vUVupSp4.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.Bx40Mpnq.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_commonjsHelpers.CqkleIqs.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/10.BKjRhntM.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/user.pDEss0fn.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/6.CekrtmbT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/each.D6YF6ztN.js">
 	</head>
 	<body data-sveltekit-preload-data="hover" data-theme="skeleton">
-		<div style="display: contents">  <nav data-svelte-h="svelte-j95q4p"><a href="./photoapp">Photoapp</a> <a href="./">hem</a> <a href="./register">Register</a> <a href="./shoppinglist">Shoppinglist</a> <a href="./memory">Memory</a> <a href="./chat">chat</a> <a href="./search">search</a> <a href="./robot">robot</a> <a href="./keyboard">keyboard</a> <a href="./hamburgare">hamburgare</a> <a href="./devblog">devblog</a></nav> <main class="svelte-1qf91v2"><div class="container svelte-1qf91v2"><h1 data-svelte-h="svelte-58kgg2">Inloggning</h1> <br> <form><div style="width: 100px; height: 100px; border-radius: 50%; overflow:hidden; background-color:black;"></div> <br> <label for="name" data-svelte-h="svelte-1end6fo"><b>Användarnamn:</b></label> <input type="text" id="name"> <label for="password" data-svelte-h="svelte-z3ft7n"><b>Lösenord:</b></label> <input type="password" id="lösenord"> <br> <br> <input type="Submit" value="Logga in" class="button svelte-1qf91v2"></form> <br> <a href="./register" data-svelte-h="svelte-1grmp7g">Har du inget konto? Registrera</a></div></main> 
+		<div style="display: contents">  <nav data-svelte-h="svelte-j95q4p"><a href="./photoapp">Photoapp</a> <a href="./">hem</a> <a href="./register">Register</a> <a href="./shoppinglist">Shoppinglist</a> <a href="./memory">Memory</a> <a href="./chat">chat</a> <a href="./search">search</a> <a href="./robot">robot</a> <a href="./keyboard">keyboard</a> <a href="./hamburgare">hamburgare</a> <a href="./devblog">devblog</a></nav>   <h1 data-svelte-h="svelte-1ryx81f">Devblog</h1> <ul><li><a href="./devblog/update1">Blogpost 1 — 2025-04-09</a> </li><li><a href="./devblog/hello-world">Hello World — 2025-04-01</a> </li></ul> 
 			
 			<script>
 				{
@@ -32,14 +31,14 @@
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null];
+					const data = [null,{"type":"data","data":{posts:[{slug:"update1",title:"Blogpost 1",date:"2025-04-09"},{slug:"hello-world",title:"Hello World",date:"2025-04-01"}]},"uses":{}}];
 
 					Promise.all([
 						import("./_app/immutable/entry/start.MWvXkQmU.js"),
 						import("./_app/immutable/entry/app.BEjqUhKL.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 10],
+							node_ids: [0, 6],
 							data,
 							form: null,
 							error: null

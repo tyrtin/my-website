@@ -14,7 +14,7 @@
     let images = [bild, bild2, bild3, bild4, bild5, bild6]
     let cards = []
     for (let i = 0; i < 12; i++){
-        cards.push({flipped:false,matched:false,image:images[Math.floor(Math.random() * images.length)]})
+        cards.push({flipped:false,matched:false,image:images[i%6]})
     }
 
 
@@ -91,6 +91,20 @@
 
 
 <style>
+    
+@media (min-height: 500px){
+  main{
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+  }
+}
+@media (max-height: 500px){
+  main{
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(2, 100px);
+  }
+}
+          
 
 .flipped{
     transform: rotateY(180deg);

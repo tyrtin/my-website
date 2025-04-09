@@ -35,6 +35,7 @@
 	<a href="{base}/robot">robot</a>
 	<a href="{base}/keyboard">keyboard</a>
 	<a href="{base}/hamburgare">hamburgare</a>
+	<a href="{base}/devblog">devblog</a>
 </nav>
 
 <slot />
