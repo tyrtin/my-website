@@ -36,21 +36,22 @@
     <div class="categories_container">
         <section>
             <h2>Varor att köpa</h2>
-            <ul>
+            <ol>
                 {#each varor as vara}
                 {#if vara.bought == false}
                     <li transition:fade class ="varaitem">
                     <form on:submit|preventDefault={itembought(vara)}>
                         {vara.namn} <input type = "submit" value= "Köpt" class="knapp">
+                        <input type="number" id="prio" namn="prio" min="1" max="5" value="1">
                     </form>
                     </li>
                 {/if}
                 {/each}
-            </ul>
+            </ol>
         </section>
         <section>
             <h2>Köpta varor</h2>
-            <ul>
+            <ol>
                 {#each varor as vara,i}
                 {#if vara.bought == true}
                     <li class= "linje">
@@ -63,7 +64,7 @@
                     </li>
                 {/if}
                 {/each}
-            </ul>
+            </ol>
         </section>
     </div>
     <form on:submit|preventDefault={itemsubmit}>

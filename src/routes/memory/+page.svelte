@@ -1,5 +1,7 @@
 <h1 class = "h1">Memory</h1>
 <script>
+	import { flip } from "svelte/animate";
+
     let flipcount = 0
     let blueTurn = true
 
@@ -59,6 +61,39 @@
             
         
         cards = cards
+        gameover()
+    }
+
+    function gameover(){
+        for (let card of cards) {
+            if (!card.flipped) {
+                return; 
+        }
+    }
+    if (redpoints > bluepoints){
+        alert("Röd vinner")
+    }
+    else if (redpoints == bluepoints){
+        alert("Oavgjort")
+    }
+    else{
+        alert("Blå vinner")
+    }
+
+}
+
+    
+
+    function gamestart(){
+        cards.forEach((card) => {
+            card.flipped = false;
+            card.matched = false;
+        });
+        bluepoints = 0
+        redpoints = 0
+        flipcount = 0
+        blueTurn = true
+        cards = cards
     }
     
 </script>
@@ -72,6 +107,8 @@
             </div>
         {/each}
     </div>
+    
+
 </main>
 
 <aside class="blue">
@@ -85,12 +122,23 @@
     </p>
 </aside>
 <aside class="turn" class:blue= { blueTurn } >
-    
 </aside>
-
+<div>
+    <button class="start" on:click={(gamestart)}>Starta om spel</button>
+</div>
 
 
 <style>
+    
+.start{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    bottom: 10px;
+    left: 700px;
+}
     
 @media (min-height: 500px){
   main{

@@ -10,4 +10,4 @@ Today I tried to use a new way to show my pictures in an SVG. Instead of using C
 <br> Since I started earlier with my projct and this is the first post I can summerize what I have done so far. 
 
 I used stackoverflow to make an information "button". <br> So when I hover over the information text it shows more information under. 
-<br> I have also used my old projects to get help with, for example, how to dispaly pictures in grids. 
+<br> I have also used my old projects to get help with, for example, how to dispaly pictures in grids.

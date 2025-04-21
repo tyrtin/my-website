@@ -34,6 +34,11 @@
 
         localStorage.setItem("myChat", JSON.stringify(chat));
   }
+
+  function rensa(){
+    localStorage.clear();
+    chat = [{ user: 'Eliza', message: eliza.getInitial() }];
+  }
                 
 </script>
 
@@ -45,7 +50,7 @@
             <p>{c.message}</p>
             </article>  
         {/each}
-        <articel id="visible" >
+        <article id="visible" >
             <span class="circle">
 
             </span>
@@ -55,7 +60,7 @@
             <span class="circle">
 
             </span>
-        </articel>
+        </article>
     </section>          
 <form  method="post"
     use:enhance={({ formElement, formData, action, cancel }) => {
@@ -66,12 +71,20 @@
             
         <input type="text" name="text" required placeholder="Skriv din fråga">
         <input type="submit" value = "Skicka">
+        <button type="button" on:click ={()=>rensa()}>Rensa chat</button>
 </form>
         
   
 </main>
 
-<style>     
+<style>    
+   button{
+    background-color: white;
+    border-radius: 2px;
+    border: solid 1px black;
+    margin-left: 50px;
+   }
+
     @keyframes typing {
         0% { transform: scale(1); }
         50% { transform: scale(1.4);}
