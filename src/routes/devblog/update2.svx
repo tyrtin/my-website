@@ -1,0 +1,16 @@
+---
+title: "Blogpost 2"
+date: "2025-05-07"
+---
+
+Since last time I have started working on the individual character sites. I use fiealdset and legend for for the information box. 
+<br> Today I started by trying to link my "se more" buttons to diffrent sites depending on which character you click on. 
+<br> I asked copilot and the AI said to use "$base/charakter" which is a reactive statement. It worked... 
+<br> I have also worked on making my site more accesible for everyone. 
+<br> I wanted to be able to change my characters outfits by clicking on a button with the name of the outfit on. 
+<br> --> So I made a button that was called "warrior outfit" and then a funtion "warrior". And then with help of copilot I figuerd out how to make it possible to change the outfit.
+<br> I used a currentOutfit and set it to the img and then in the function I set currentOutfit to a new outfit.
+<br> I have made the information easier to read. 
+<br> With media quiries I experiment on how to make it better when you use a phone. 
+<br>I used "Master Media Queries And Responsive CSS Web Design Like a Chameleon!" youtube video by Slaying the dragon".
+<br> --> To get a better understanding of how to use media queries.
