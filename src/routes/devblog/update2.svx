@@ -14,3 +14,4 @@ Since last time I have started working on the individual character sites. I use 
 <br> With media quiries I experiment on how to make it better when you use a phone. 
 <br>I used "Master Media Queries And Responsive CSS Web Design Like a Chameleon!" youtube video by Slaying the dragon".
 <br> --> To get a better understanding of how to use media queries.
+<br> I use "https://wallpapercave.com/wp/wp13467289.png" as background in my individual character sites. 
